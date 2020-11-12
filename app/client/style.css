@@ -1,0 +1,20 @@
+.ui.container.home {
+  font-size: large;
+  background-color: seashell;
+}
+
+.ui.borderless.menu {
+  background-color: seashell;
+}
+
+.ui.landing.image {
+  padding-top: 10px;
+}
+
+.landing {
+  background-color: seashell;
+}
+
+.homepage {
+  background-color: seashell;
+}
