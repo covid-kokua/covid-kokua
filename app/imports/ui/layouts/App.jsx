@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar';
 import Landing from '../pages/Landing';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
+import AdditionalServices from '../pages/AdditionalServices';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -16,6 +17,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Landing}/>
               <Route path="/home" component={Home}/>
+              <Route path="/additional" component={AdditionalServices}/>
               <Route component={NotFound}/>
             </Switch>
           </div>
