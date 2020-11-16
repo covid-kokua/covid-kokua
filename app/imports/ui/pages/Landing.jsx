@@ -8,7 +8,7 @@ class Landing extends React.Component {
     return (
         <div className='landing'>
           <Grid id='landing-page' verticalAlign='middle' textAlign='center' container>
-            <Image fluid className='landing' src="/images/oahu.jpg"/>
+            <Image className='landing' src="/images/oahu.jpg"/>
             <Grid.Column width={8}>
               <h1>Welcome to #COVID-Kokua!</h1>
               <p>A center for all COVID related resources such as financial assistance, social services, and other
