@@ -6,7 +6,7 @@ class AdditionalServices extends React.Component {
     return (
         <div className='additional'>
           <Container className='additional'>
-            <Grid columns={3} centered>
+            <Grid centered columns={3}>
               <h1>Additional Services</h1>
               <h3>Want to know more? Please visit some of the websites linked below to find information from state,
                 federal, and official medical sources regarding COVID-19.</h3>
@@ -27,7 +27,7 @@ class AdditionalServices extends React.Component {
                     </Card.Content>
                   </Card>
                 </Grid.Column>
-                <Grid.Column>
+                <Grid.Column centered>
                   <Card>
                     <Image
                         src='https://149353219.v2.pressablecdn.com/wp-content/uploads/cdc-logo.png'
