@@ -10,10 +10,14 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header as='h1'>#COVID-Kokua</Header>
           </Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/home" key='home'>Social Services</Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/home" key='home'>Financial Services</Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/home" key='home'>Student Services</Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/home" key='home'>Additional Services</Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/socialservices" key='socialservices'>Social
+            Services</Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/home" key='home'>Financial
+            Services</Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/home" key='home'>Student
+            Services</Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/home" key='home'>Additional
+            Services</Menu.Item>
           <Menu.Item as={NavLink} activeClassName="" exact to="/home" key='home'>FAQ&apos;s</Menu.Item>
           <Menu.Item as={NavLink} activeClassName="" exact to="/home" key='home'>How Can You Help?</Menu.Item>
         </Menu>
