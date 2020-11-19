@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar';
 import Landing from '../pages/Landing';
 import Home from '../pages/Home';
 import SocialServices from '../pages/SocialServices';
+import StudentResources from '../pages/StudentResources';
 import NotFound from '../pages/NotFound';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -18,6 +19,7 @@ class App extends React.Component {
               <Route exact path="/" component={Landing}/>
               <Route path="/home" component={Home}/>
               <Route path="/socialservices" component={SocialServices}/>
+              <Route path="/studentresources" component={StudentResources}/>
               <Route component={NotFound}/>
             </Switch>
           </div>
