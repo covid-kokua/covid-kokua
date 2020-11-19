@@ -17,10 +17,13 @@ class FinancialServices extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container>
-          <Header as="h2" textAlign="center" inverted>Financial Information</Header>
-          <Card.Group>{this.props.resources.map((resource, index) => <Resource key={index} resource={resource}/>)}</Card.Group>
-        </Container>
+        <div className='financial'>
+          <Container>
+            <Header as="h1" textAlign="center">Financial Information</Header>
+            <Card.Group>{this.props.resources.map((resource, index) => <Resource key={index} resource={resource}/>)}</Card.Group>
+          </Container>
+        </div>
+
     );
   }
 }
