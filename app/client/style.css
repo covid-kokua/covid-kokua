@@ -26,3 +26,14 @@
 .financial {
   background-color: lightgreen;
 }
+
+.addfinancial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.financialHeader {
+  margin: 10px;
+}

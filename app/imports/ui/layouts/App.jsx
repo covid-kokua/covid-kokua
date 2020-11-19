@@ -7,6 +7,8 @@ import Home from '../pages/Home';
 import SocialServices from '../pages/SocialServices';
 import NotFound from '../pages/NotFound';
 import FinancialServices from '../pages/FinancialServices';
+import EditFinancial from '../pages/EditFinancial';
+import AddFinResource from '../pages/AddFinResource';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -20,6 +22,8 @@ class App extends React.Component {
               <Route path="/home" component={Home}/>
               <Route path="/socialservices" component={SocialServices}/>
               <Route path="/financialservices" component={FinancialServices}/>
+              <Route path="/editfinancial/:_id" component={EditFinancial}/>
+              <Route path="/addfinancial" component={AddFinResource}/>
               <Route component={NotFound}/>
             </Switch>
           </div>
