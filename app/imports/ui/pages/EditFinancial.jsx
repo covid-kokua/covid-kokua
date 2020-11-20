@@ -24,8 +24,8 @@ class EditFinancial extends React.Component {
   submit(data) {
     const { name, website, phoneNumber, image, description, _id } = data;
     Resources.collection.update(_id, { $set: { name, website, phoneNumber, image, description } }, (error) => (error ?
-      swal('Error', error.message, 'error') :
-      swal('Success', 'Item updated successfully', 'success')));
+        swal('Error', error.message, 'error') :
+        swal('Success', 'Item updated successfully', 'success')));
   }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -36,23 +36,25 @@ class EditFinancial extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
     return (
-        <Grid container centered>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">Edit Resource</Header>
-            <AutoForm schema={bridge} onSubmit={data => this.submit(data)} model={this.props.doc}>
-              <Segment>
-                <TextField name='name'/>
-                <TextField name='website'/>
-                <TextField name='phoneNumber'/>
-                <TextField name='image'/>
-                <LongTextField name='description'/>
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
-                <HiddenField name='type' />
-              </Segment>
-            </AutoForm>
-          </Grid.Column>
-        </Grid>
+        <div className='financial'>
+          <Grid container centered>
+            <Grid.Column>
+              <Header as="h2" textAlign="center">Edit Resource</Header>
+              <AutoForm schema={bridge} onSubmit={data => this.submit(data)} model={this.props.doc}>
+                <Segment>
+                  <TextField name='name'/>
+                  <TextField name='website'/>
+                  <TextField name='phoneNumber'/>
+                  <TextField name='image'/>
+                  <LongTextField name='description'/>
+                  <SubmitField value='Submit'/>
+                  <ErrorsField/>
+                  <HiddenField name='type'/>
+                </Segment>
+              </AutoForm>
+            </Grid.Column>
+          </Grid>
+        </div>
     );
   }
 }

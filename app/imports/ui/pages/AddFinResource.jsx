@@ -25,36 +25,40 @@ class AddFinResource extends React.Component {
     const { name, website, phoneNumber, image, description } = data;
     const type = 'financial';
     Resources.collection.insert({ name, website, phoneNumber, image, description, type },
-      (error) => {
-        if (error) {
-          swal('Error', error.message, 'error');
-        } else {
-          swal('Success', 'Item added successfully', 'success');
-          formRef.reset();
-        }
-      });
+        (error) => {
+          if (error) {
+            swal('Error', error.message, 'error');
+          } else {
+            swal('Success', 'Item added successfully', 'success');
+            formRef.reset();
+          }
+        });
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
     let fRef = null;
     return (
-        <Grid container centered>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">Add Resource</Header>
-            <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
-              <Segment>
-                <TextField name='name'/>
-                <TextField name='website'/>
-                <TextField name='phoneNumber'/>
-                <TextField name='image'/>
-                <LongTextField name='description'/>
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
-              </Segment>
-            </AutoForm>
-          </Grid.Column>
-        </Grid>
+        <div className='financial'>
+          <Grid container centered>
+            <Grid.Column>
+              <Header as="h2" textAlign="center">Add Resource</Header>
+              <AutoForm ref={ref => {
+                fRef = ref;
+              }} schema={bridge} onSubmit={data => this.submit(data, fRef)}>
+                <Segment>
+                  <TextField name='name'/>
+                  <TextField name='website'/>
+                  <TextField name='phoneNumber'/>
+                  <TextField name='image'/>
+                  <LongTextField name='description'/>
+                  <SubmitField value='Submit'/>
+                  <ErrorsField/>
+                </Segment>
+              </AutoForm>
+            </Grid.Column>
+          </Grid>
+        </div>
     );
   }
 }
