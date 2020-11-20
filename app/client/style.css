@@ -23,3 +23,22 @@
   background-color: seashell;
 }
 
+.social {
+  background-color: seashell;
+}
+
+.financial {
+  background-color: lightgreen;
+  margin-top: 20px;
+}
+
+.addfinancial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.financialHeader {
+  margin: 10px;
+}
