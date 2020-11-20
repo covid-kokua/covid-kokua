@@ -27,12 +27,14 @@ class StudentResources extends React.Component {
             <Image src="/images/hamilton-library.jpg"/>
             <p>
               Hamilton Library offers remote consultation and assistance as well as other library resources online.
-              They can be reached at https://manoa.hawaii.edu/library/remote-resources/.
+              They can be reached at <a href='https://manoa.hawaii.edu/library/remote-resources/.'
+                                        target='new'>Hamilton Library</a>
             </p>
             <Header as='h1' textAlign='fitted left'> Learning Assistance Center</Header>
             <p>
               The Learning Assistance Center will be available for tutoring through online video meetings. The LAC
-              can be reached by visiting https://manoa.hawaii.edu/undergrad/Learning/tutoring/. The subjects available for tutoring are:
+              can be reached by visiting <a href='https://manoa.hawaii.edu/undergrad/Learning/tutoring/'
+                                            target='new'>Learning Assistance Center</a>. The subjects available for tutoring are:
             </p>
             <List bulleted>
               <List.Item>Math</List.Item>
@@ -44,7 +46,8 @@ class StudentResources extends React.Component {
             <Header as='h1' textAlign='fitted left'> Counseling and Student Development Center</Header>
             <p>
               The CSDC offers a variety of services to students and can be very helpful during this period of stress and anxiety.
-              They can be reached by visiting https://manoa.hawaii.edu/counseling/. Some of their Services include
+              They can be reached by visiting <a href='https://manoa.hawaii.edu/counseling/'
+                                                 target='new'>Counseling and Student Development Center</a>. Some of their Services include
             </p>
             <List bulleted>
               <List.Item>Hawaii CARES Hotline</List.Item>
