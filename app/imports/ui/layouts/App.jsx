@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar';
 import Landing from '../pages/Landing';
 import Home from '../pages/Home';
 import SocialServices from '../pages/SocialServices';
+import StudentResources from '../pages/StudentResources';
 import NotFound from '../pages/NotFound';
 import FinancialServices from '../pages/FinancialServices';
 import EditFinancial from '../pages/EditFinancial';
@@ -24,6 +25,7 @@ class App extends React.Component {
               <Route path="/financialservices" component={FinancialServices}/>
               <Route path="/editfinancial/:_id" component={EditFinancial}/>
               <Route path="/addfinancial" component={AddFinResource}/>
+              <Route path="/studentresources" component={StudentResources}/>
               <Route component={NotFound}/>
             </Switch>
           </div>
