@@ -7,6 +7,7 @@ import SocialServices from '../pages/SocialServices';
 import StudentResources from '../pages/StudentResources';
 import NotFound from '../pages/NotFound';
 import AdditionalServices from '../pages/AdditionalServices';
+import FAQ from '../pages/FAQ';
 import FinancialServices from '../pages/FinancialServices';
 import EditFinancial from '../pages/EditFinancial';
 import AddFinResource from '../pages/AddFinResource';
@@ -16,7 +17,7 @@ class App extends React.Component {
   render() {
     return (
         <Router>
-          <div>
+          <div className="back">
             <NavBar/>
             <Switch>
               <Route exact path="/" component={Landing}/>
@@ -26,6 +27,7 @@ class App extends React.Component {
               <Route path="/editfinancial/:_id" component={EditFinancial}/>
               <Route path="/addfinancial" component={AddFinResource}/>
               <Route path="/studentresources" component={StudentResources}/>
+              <Route path="/faq" component={FAQ}/>
               <Route component={NotFound}/>
             </Switch>
           </div>
