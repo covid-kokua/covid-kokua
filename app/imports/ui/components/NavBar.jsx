@@ -6,7 +6,7 @@ import { Menu, Header } from 'semantic-ui-react';
 class NavBar extends React.Component {
   render() {
     return (
-        <Menu attached="top" borderless>
+        <Menu attached="top" fixed borderless>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header as='h1'>#Kokua-Hawai&apos;i</Header>
           </Menu.Item>
@@ -17,8 +17,8 @@ class NavBar extends React.Component {
             Services</Menu.Item>
           <Menu.Item as={NavLink} activeClassName="" exact to="/studentresources" key='studentresources'>Student
             Services</Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/home" key='home'>FAQ&apos;s</Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/home" key='home'>How Can You Help?</Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/" key=''>FAQ&apos;s</Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/" key=''>How Can You Help?</Menu.Item>
         </Menu>
     );
   }
