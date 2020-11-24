@@ -5,7 +5,7 @@ class AdditionalServices extends React.Component {
   render() {
     return (
         <div className='additional'>
-          <Container className='additional'>
+          <Container>
             <Grid centered columns={3}>
               <h1>Additional Services</h1>
               <h3>Want to know more? Please visit some of the websites linked below to find information from state,
@@ -35,7 +35,8 @@ class AdditionalServices extends React.Component {
                     <Card.Content>
                       <Card.Header>CDC</Card.Header>
                       <Card.Description>
-                        Official website of the Center for Disease Control & Prevention with information on how to stop the spread.
+                        Official website of the Center for Disease Control & Prevention with information on how to
+                        stop the spread.
                       </Card.Description>
                       <Card.Description>
                         <a href="https://www.cdc.gov/">https://www.cdc.gov/<Icon name='globe'/></a>
@@ -88,7 +89,8 @@ class AdditionalServices extends React.Component {
                     <Card.Content>
                       <Card.Header>FEMA</Card.Header>
                       <Card.Description>
-                        Official website of the Federal Emergency Management Agency, with information regarding recovery
+                        Official website of the Federal Emergency Management Agency, with information regarding
+                        recovery
                         & economic support for individuals & businesses.
                       </Card.Description>
                       <Card.Description>
@@ -106,7 +108,8 @@ class AdditionalServices extends React.Component {
                     <Card.Content>
                       <Card.Header>SBA</Card.Header>
                       <Card.Description>
-                        Official website of the U.S. Small Business Administration, with relief and funding options for
+                        Official website of the U.S. Small Business Administration, with relief and funding options
+                        for
                         small businesses.
                       </Card.Description>
                       <Card.Description>

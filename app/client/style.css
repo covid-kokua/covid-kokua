@@ -7,7 +7,12 @@ body {
 }
 
 .ui.container.home {
-    font-size: large;
+  font-size: large;
+}
+
+.additional {
+  background-color: seashell;
+  margin-top: 25px;
 }
 
 .ui.landing.image {
