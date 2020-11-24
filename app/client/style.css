@@ -7,28 +7,12 @@ body {
   background-color: seashell;
 }
 
-.ui.borderless.menu {
-  background-color: seashell;
+.ui.container.home {
+  font-size: large;
 }
 
 .ui.landing.image {
-  padding-top: 10px;
-}
-
-.landing {
-  background-color: seashell;
-}
-
-.homepage {
-  background-color: seashell;
-}
-
-.additional {
-  background-color: seashell;
-}
-
-.social {
-  background-color: seashell;
+  padding-top: 15px;
 }
 
 .financial {
@@ -52,6 +36,6 @@ body {
 }
 
 .faq {
-  margin-top: 20px;
+    margin-top: 20px;
     font-size: large;
 }
