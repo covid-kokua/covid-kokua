@@ -17,6 +17,7 @@ class Landing extends React.Component {
                 page!</Header>
             </Grid.Column>
           </Grid>
+          <iframe src="https://public.domo.com/cards/aAR5B" width="100%" height="600" marginHeight="0" marginWidth="0" frameBorder="0"></iframe>
         </div>
     );
   }
