@@ -8,7 +8,7 @@ class NavBar extends React.Component {
     return (
         <Menu attached="top" borderless>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Header as='h1'>#COVID-Kokua</Header>
+            <Header as='h1'>#Kokua-Hawai&apos;i</Header>
           </Menu.Item>
           <Menu.Item as={NavLink} activeClassName="" exact to="/additional" key='additional'>Additional Services</Menu.Item>
           <Menu.Item as={NavLink} activeClassName="" exact to="/socialservices" key='socialservices'>Social
