@@ -21,6 +21,9 @@ class FinancialServices extends React.Component {
         <div className='financial'>
           <Container>
             <Header as="h1" textAlign="center" className="financialHeader">Financial Information</Header>
+            <p>This page is designed to contain resources primarily focused on finances, and financial support.
+              If you know of a resource that is not listed here, please add it to the page using the &apos;Add
+               a new Resource&apos; tool.</p>
             <div className={'addfinancial'}>
               <Link to={'/addfinancial'}>
                 <Button>Add a new Resource</Button>
