@@ -2,17 +2,16 @@ body {
     background-color: seashell !important;
 }
 
-.ui.container.home {
-  font-size: large;
-  background-color: seashell;
+.ui.menu.top {
+    background-color: seashell;
 }
 
 .ui.container.home {
-  font-size: large;
+    font-size: large;
 }
 
 .ui.landing.image {
-  padding-top: 15px;
+    padding-top: 15px;
 }
 
 .financial {
