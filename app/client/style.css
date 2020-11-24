@@ -1,4 +1,4 @@
-.ui.menu.top {
+.ui.menu.borderless {
   background-color: seashell;
 }
 
@@ -22,8 +22,29 @@
   margin: 10px;
 }
 
-.financialHeader {
+.ui.header.financialHeader {
   margin: 10px;
+  padding-top: 50px;
+}
+
+.ui.container.additional {
+  padding-top: 80px;
+}
+
+.ui.grid.celled {
+  padding-top: 45px;
+}
+
+.ui.header.studentheader {
+  padding-top: 70px;
+}
+
+.ui.header.mission {
+  padding-top: 20px;
+}
+
+.intro {
+  padding-bottom: 20px;
 }
 
 body {

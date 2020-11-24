@@ -6,7 +6,7 @@ class StudentResources extends React.Component {
     return (
         <div className='homepage'>
           <Container className='home'>
-            <Header as='h1' textAlign='center'>Student Resources</Header>
+            <Header as='h1' textAlign='center' className='studentheader'>Student Resources</Header>
             <Image centered src="/images/CampusCenter.jpg"/>
             <Header as='h1' textAlign='fitted left'>UH Student Relief Fund</Header>
             <p>

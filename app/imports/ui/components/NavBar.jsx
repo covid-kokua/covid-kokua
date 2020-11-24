@@ -6,7 +6,7 @@ import { Menu, Header } from 'semantic-ui-react';
 class NavBar extends React.Component {
   render() {
     return (
-        <Menu attached="top" fixed borderless>
+        <Menu className='fixed' borderless>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header as='h1'>#Kokua-Hawai&apos;i</Header>
           </Menu.Item>

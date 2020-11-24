@@ -10,14 +10,14 @@ class Landing extends React.Component {
             <Image className='landing' src="/images/oahu.jpg"/>
             <Grid.Column width={8}>
               <h1>Welcome to #Kokua-Hawai&apos;i!</h1>
-              <p>A center for all COVID related resources such as financial assistance, social services, and other
+              <p className='intro'>A center for all COVID related resources such as financial assistance, social services, and other
                 services that will help our islands.</p>
             </Grid.Column>
           </Grid>
           <iframe src="https://public.domo.com/cards/aAR5B" width="100%" height="600" marginHeight="0" marginWidth="0" frameBorder="0"></iframe>
 
           <Container className='home'>
-            <Header as='h1' textAlign='center'>Mission Statement</Header>
+            <Header as='h1' textAlign='center' className='mission'>Mission Statement</Header>
             <p>
               With so many websites failing to give the proper, relevant information to our residents, #COVID-Kokua is
               designed to ensure that all COVID related resources are in one spot. We have gathered information from
