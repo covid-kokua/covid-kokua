@@ -4,7 +4,7 @@ import { Container, Image, Grid, Card } from 'semantic-ui-react';
 class StudentResources extends React.Component {
   render() {
     return (
-        <div className='student'>
+        <div id='student-page' className='student'>
           <Container className='student'>
             <Grid centered columns={3}>
               <h1>Student Services</h1>
