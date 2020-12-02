@@ -47,12 +47,12 @@ class AddFinResource extends React.Component {
                 fRef = ref;
               }} schema={bridge} onSubmit={data => this.submit(data, fRef)}>
                 <Segment>
-                  <TextField name='name'/>
-                  <TextField name='website'/>
-                  <TextField name='phoneNumber'/>
-                  <TextField name='image'/>
-                  <LongTextField name='description'/>
-                  <SubmitField value='Submit'/>
+                  <TextField id='name' name='name'/>
+                  <TextField id='website' name='website'/>
+                  <TextField id='phone' name='phoneNumber'/>
+                  <TextField id='image' name='image'/>
+                  <LongTextField id='description' name='description'/>
+                  <SubmitField id='submit' value='Submit'/>
                   <ErrorsField/>
                 </Segment>
               </AutoForm>

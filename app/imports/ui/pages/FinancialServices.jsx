@@ -18,7 +18,7 @@ class FinancialServices extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <div className='financial'>
+        <div id='financial-page' className='financial'>
           <Container>
             <Header as="h1" textAlign="center" className="financialHeader">Financial Information</Header>
             <p>This page is designed to contain resources primarily focused on finances, and financial support.
@@ -26,7 +26,7 @@ class FinancialServices extends React.Component {
                a new Resource&apos; tool.</p>
             <div className={'addfinancial'}>
               <Link to={'/addfinancial'}>
-                <Button>Add a new Resource</Button>
+                <Button id='addfinance-link'>Add a new Resource</Button>
               </Link>
             </div>
             <Card.Group>{this.props.resources.map((resource, index) => <Resource key={index} resource={resource}/>)}</Card.Group>

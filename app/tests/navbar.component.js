@@ -1,40 +1,28 @@
-import { Selector } from 'testcafe';
-
 class NavBar {
 
-  /** If someone is logged in, then log them out, otherwise do nothing. */
-  async ensureLogout(testController) {
-    const loggedInUser = await Selector('#navbar-current-user').exists;
-    if (loggedInUser) {
-      await testController.click('#navbar-current-user');
-      await testController.click('#navbar-sign-out');
-    }
+  /** Go to Social Services page */
+  async gotoSocial(testController) {
+    await testController.click('#social');
   }
 
-  async gotoSigninPage(testController) {
-    await this.ensureLogout(testController);
-    await testController.click('#login-dropdown');
-    await testController.click('#login-dropdown-sign-in');
+  /** Go to Financial Services page */
+  async gotoFinancial(testController) {
+    await testController.click('#financial');
   }
 
-  /** Check that the specified user is currently logged in. */
-  async isLoggedIn(testController, username) {
-    const loggedInUser = Selector('#navbar-current-user').innerText;
-    await testController.expect(loggedInUser).eql(username);
+  /** Go to Student Services page */
+  async gotoStudent(testController) {
+    await testController.click('#student');
   }
 
-  /** Check that someone is logged in, then click items to logout. */
-  async logout(testController) {
-    await testController.expect(Selector('#navbar-current-user').exists).ok();
-    await testController.click('#navbar-current-user');
-    await testController.click('#navbar-sign-out');
+  /** Go to FAQ page */
+  async gotoFAQ(testController) {
+    await testController.click('#faq');
   }
 
-  /** Pull down login menu, go to sign up page. */
-  async gotoSignupPage(testController) {
-    await this.ensureLogout(testController);
-    await testController.click('#login-dropdown');
-    await testController.click('#login-dropdown-sign-up');
+  /** Go to Additional Services page */
+  async gotoAdditional(testController) {
+    await testController.click('#additional');
   }
 }
 

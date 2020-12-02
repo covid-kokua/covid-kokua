@@ -4,7 +4,7 @@ import { Container, Header } from 'semantic-ui-react';
 class FAQ extends React.Component {
   render() {
     return (
-        <div>
+        <div id='faq-page'>
           <Container className='faq'>
             <Header as='h1' textAlign='center'>Frequently asked Questions</Header>
             <Header as='h2' textAlign='center'>How Do I Navigate #COVID-Kokua?</Header>

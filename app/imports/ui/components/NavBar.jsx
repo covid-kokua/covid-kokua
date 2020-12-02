@@ -10,15 +10,17 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header as='h1'>#Kokua-Hawai&apos;i</Header>
           </Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/socialservices" key='socialservices'>Social
+          <Menu.Item id='social' as={NavLink} activeClassName="" exact to="/socialservices" key='socialservices'>Social
             Services</Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="active" exact to="/financialservices" key='financialservices'>Financial
+          <Menu.Item id='financial' as={NavLink} activeClassName="active" exact to="/financialservices"
+                     key='financialservices'>Financial
             Services</Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/studentresources" key='studentresources'>Student
+          <Menu.Item id='student' as={NavLink} activeClassName="" exact to="/studentresources" key='studentresources'>Student
             Services</Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/faq" key='faq'>FAQ&apos;s</Menu.Item>
+          <Menu.Item id='faq' as={NavLink} activeClassName="" exact to="/faq" key='faq'>FAQ&apos;s</Menu.Item>
           <Menu.Item as={NavLink} activeClassName="" exact to="/" key=''>How Can You Help?</Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/additional" key='additional'>Additional Services</Menu.Item>
+          <Menu.Item id='additional' as={NavLink} activeClassName="" exact to="/additional" key='additional'>Additional
+            Services</Menu.Item>
         </Menu>
     );
   }

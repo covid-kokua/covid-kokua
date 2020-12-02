@@ -4,7 +4,7 @@ import { Grid, Header, Divider } from 'semantic-ui-react';
 class SocialServices extends React.Component {
   render() {
     return (
-        <div className='social'>
+        <div id='social-page' className='social'>
           <Grid celled>
             <Grid.Row>
               <Grid.Column width={5}>

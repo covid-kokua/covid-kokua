@@ -4,7 +4,7 @@ import { Container, Image, Header, List } from 'semantic-ui-react';
 class StudentResources extends React.Component {
   render() {
     return (
-        <div className='homepage'>
+        <div id='student-page' className='homepage'>
           <Container className='home'>
             <Header as='h1' textAlign='center' className='studentheader'>Student Resources</Header>
             <Image centered src="/images/CampusCenter.jpg"/>

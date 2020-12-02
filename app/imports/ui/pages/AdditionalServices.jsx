@@ -4,7 +4,7 @@ import { Card, Container, Grid, Icon, Image } from 'semantic-ui-react';
 class AdditionalServices extends React.Component {
   render() {
     return (
-        <div className='additional'>
+        <div id='additional-page' className='additional'>
           <Container>
             <Grid centered columns={3}>
               <h1>Additional Services</h1>
