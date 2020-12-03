@@ -11,6 +11,46 @@
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
   ],
 
+  "defaultFinancial": [
+    {
+      "name": "CARES act",
+      "website": "https://home.treasury.gov/policy-issues/cares",
+      "description": "The CARES act is a economic relief bill passed by congress aimed to help small businesses and individuals. Detailed information regarding how much money and its effects can be found at their website.",
+      "type": "financial"
+    },
+    {
+      "name": "Disaster relief for food, housing, and bills",
+      "website": "https://www.usa.gov/disaster-help-food-housing-bills",
+      "description": "Covers things like an eviction ban for renters and food program rules easing.",
+      "type": "financial"
+    },
+    {
+      "name": "CDC Financial Resources",
+      "website": "https://www.cdc.gov/coronavirus/2019-ncov/php/open-america/financial-resources.html",
+      "description": "A collection of resources provided by the CDC covering a wide range of topics from financial aid and budgeting to laws and frequently asked questions.",
+      "type": "financial"
+    },
+    {
+      "name": "Aloha United Way Financial Resources",
+      "website": "https://www.auw.org/covid-19-assistance-programs",
+      "description": "Various relief programs for rent, housing, and utility charges.",
+      "type": "financial"
+    },
+    {
+      "name": "Hawaii Financial Assistance",
+      "website": "https://www.benefits.gov/benefit/1660",
+      "description": "! Not covid specific !  A program aimed at providing assistance to families with or expecting children.",
+      "type": "financial"
+    }
+  ,
+    {
+      "name": "Legal Aid Society Financial assistance",
+      "website": "https://www.legalaidhawaii.org/financial-assistance-covid-19.html",
+      "description": "Application for food stamps and/or financial assistance.",
+      "type": "financial"
+    }
+  ],
+
   "monti": {
     "appId": "changeme",
     "appSecret": "changeme"
