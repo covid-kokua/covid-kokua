@@ -35,8 +35,7 @@ class AdditionalServices extends React.Component {
                     <Card.Content>
                       <Card.Header>CDC</Card.Header>
                       <Card.Description>
-                        Official website of the Center for Disease Control & Prevention with information on how to
-                        stop the spread.
+                        Official website of the Center for Disease Control & Prevention.
                       </Card.Description>
                       <Card.Description>
                         <a href="https://www.cdc.gov/">https://www.cdc.gov/<Icon name='globe'/></a>
