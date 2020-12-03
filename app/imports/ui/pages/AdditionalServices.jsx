@@ -6,14 +6,14 @@ class AdditionalServices extends React.Component {
     return (
         <div id='additional-page' className='additional'>
           <Container>
-            <Grid centered columns={3}>
+            <Grid centered columns={4}>
               <h1>Additional Services</h1>
               <h3>Want to know more? Please visit some of the websites linked below to find information from state,
                 federal, and official medical sources regarding COVID-19.</h3>
               <Grid.Row>
                 <Grid.Column>
-                  <Card>
-                    <Image
+                  <Card fluid>
+                    <Image className='imageAdditional'
                         src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Seal_of_Honolulu%2C_Hawaii.svg/600px-Seal_of_Honolulu%2C_Hawaii.svg.png'
                         wrapped ui={false}/>
                     <Card.Content>
@@ -28,7 +28,7 @@ class AdditionalServices extends React.Component {
                   </Card>
                 </Grid.Column>
                 <Grid.Column centered>
-                  <Card>
+                  <Card fluid>
                     <Image
                         src='https://149353219.v2.pressablecdn.com/wp-content/uploads/cdc-logo.png'
                         wrapped ui={false}/>
@@ -45,7 +45,7 @@ class AdditionalServices extends React.Component {
                   </Card>
                 </Grid.Column>
                 <Grid.Column>
-                  <Card>
+                  <Card fluid>
                     <Image
                         src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYkFCvriTLEpGif0VY6NeptXUTpqwBsi8QZA&usqp=CAU'
                         wrapped ui={false}/>
