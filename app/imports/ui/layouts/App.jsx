@@ -1,6 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import 'semantic-ui-css/semantic.css';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { Meteor } from 'meteor/meteor';
+import { Roles } from 'meteor/alanning:roles';
+import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Landing from '../pages/Landing';
 import SocialServices from '../pages/SocialServices';
@@ -11,6 +14,7 @@ import FAQ from '../pages/FAQ';
 import FinancialServices from '../pages/FinancialServices';
 import EditFinancial from '../pages/EditFinancial';
 import AddFinResource from '../pages/AddFinResource';
+import FinancialServicesAdmin from '../pages/FinancialServicesAdmin';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -24,6 +28,7 @@ class App extends React.Component {
               <Route path="/additional" component={AdditionalServices}/>
               <Route path="/socialservices" component={SocialServices}/>
               <Route path="/financialservices" component={FinancialServices}/>
+              <AdminProtectedRoute path="/admin" component={FinancialServicesAdmin}/>
               <Route path="/editfinancial/:_id" component={EditFinancial}/>
               <Route path="/addfinancial" component={AddFinResource}/>
               <Route path="/studentresources" component={StudentResources}/>
@@ -35,5 +40,30 @@ class App extends React.Component {
     );
   }
 }
+
+/**
+ * AdminProtectedRoute (see React Router v4 sample)
+ * Checks for Meteor login and admin role before routing to the requested page, otherwise goes to signin page.
+ * @param {any} { component: Component, ...rest }
+ */
+const AdminProtectedRoute = ({ component: Component, ...rest }) => (
+    <Route
+        {...rest}
+        render={(props) => {
+          const isLogged = Meteor.userId() !== null;
+          const isAdmin = Roles.userIsInRole(Meteor.userId(), 'admin');
+          return (isLogged && isAdmin) ?
+              (<Component {...props} />) :
+              (<Redirect to={{ pathname: '/signin', state: { from: props.location } }}/>
+              );
+        }}
+    />
+);
+
+/** Require a component and location to be passed to each AdminProtectedRoute. */
+AdminProtectedRoute.propTypes = {
+  component: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
+  location: PropTypes.object,
+};
 
 export default App;
