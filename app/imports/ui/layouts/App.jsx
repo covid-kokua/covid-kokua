@@ -34,7 +34,7 @@ class App extends React.Component {
               <Route path="/additional" component={AdditionalServices}/>
               <Route path="/socialservices" component={SocialServices}/>
               <Route path="/financialservices" component={FinancialServices}/>
-              <AdminProtectedRoute path="/admin" component={FinancialServicesAdmin}/>
+              <AdminProtectedRoute path="/adminfinancial" component={FinancialServicesAdmin}/>
               <Route path="/editfinancial/:_id" component={EditFinancial}/>
               <Route path="/addfinancial" component={AddFinResource}/>
               <Route path="/studentresources" component={StudentResources}/>

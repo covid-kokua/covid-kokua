@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { Meteor } from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor';
 // import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Menu, Dropdown, Header } from 'semantic-ui-react';
+import { Roles } from 'meteor/alanning:roles';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
@@ -18,6 +19,9 @@ class NavBar extends React.Component {
           <Menu.Item id='financial' as={NavLink} activeClassName="active" exact to="/financialservices"
                      key='financialservices'>Financial
             Services</Menu.Item>
+          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/adminfinancial" key='adminfin'>Financial Service Admin</Menu.Item>
+          ) : ''}
           <Menu.Item id='student' as={NavLink} activeClassName="" exact to="/studentresources" key='studentresources'>Student
             Services</Menu.Item>
           <Menu.Item id='faq' as={NavLink} activeClassName="" exact to="/faq" key='faq'>FAQ&apos;s</Menu.Item>
