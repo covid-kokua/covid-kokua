@@ -18,6 +18,7 @@
       "description": "The CARES act is a economic relief bill passed by congress aimed to help small businesses and individuals. Detailed information regarding how much money and its effects can be found at their website.",
       "type": "financial"
     },
+
     {
       "name": "Disaster relief for food, housing, and bills",
       "website": "https://www.usa.gov/disaster-help-food-housing-bills",
