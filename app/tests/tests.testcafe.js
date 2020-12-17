@@ -1,5 +1,5 @@
 import { Social } from './socialservices.page';
-import { landingPage} from './landing.page';
+import { landingPage } from './landing.page';
 import { Financial } from './financialservices.page';
 import { Student } from './studentservices.page';
 import { FAQ } from './faq.page';
