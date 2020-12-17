@@ -58,7 +58,7 @@ class SocialServices extends React.Component {
                   Pantry Registration</a></p>
               </Grid.Column>
               <Grid.Column width={7}>
-                <Header as='h4'>The following phone numbers are for direct social services:</Header>
+                <Header as='h8'>The following phone numbers are for direct social services:</Header>
                 <Grid columns={2} divided>
                   <Grid.Column>
                     <p>Public Assistance Information Line</p>
