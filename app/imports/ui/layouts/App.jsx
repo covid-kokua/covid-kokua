@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import 'semantic-ui-css/semantic.css';
-import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
+import { Meteor } from 'meteor/meteor';
+import 'semantic-ui-css/semantic.css';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Landing from '../pages/Landing';
@@ -15,6 +15,9 @@ import FinancialServices from '../pages/FinancialServices';
 import EditFinancial from '../pages/EditFinancial';
 import AddFinResource from '../pages/AddFinResource';
 import FinancialServicesAdmin from '../pages/FinancialServicesAdmin';
+import Signin from '../pages/Signin';
+import Signup from '../pages/Signup';
+import Signout from '../pages/Signout';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -25,6 +28,9 @@ class App extends React.Component {
             <NavBar/>
             <Switch>
               <Route exact path="/" component={Landing}/>
+              <Route path="/signin" component={Signin}/>
+              <Route path="/signup" component={Signup}/>
+              <ProtectedRoute path="/signout" component={Signout}/>
               <Route path="/additional" component={AdditionalServices}/>
               <Route path="/socialservices" component={SocialServices}/>
               <Route path="/financialservices" component={FinancialServices}/>
@@ -40,6 +46,23 @@ class App extends React.Component {
     );
   }
 }
+const ProtectedRoute = ({ component: Component, ...rest }) => (
+    <Route
+        {...rest}
+        render={(props) => {
+          const isLogged = Meteor.userId() !== null;
+          return isLogged ?
+              (<Component {...props} />) :
+              (<Redirect to={{ pathname: '/signin', state: { from: props.location } }}/>
+              );
+        }}
+    />
+);
+
+ProtectedRoute.propTypes = {
+  component: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
+  location: PropTypes.object,
+};
 
 /**
  * AdminProtectedRoute (see React Router v4 sample)
