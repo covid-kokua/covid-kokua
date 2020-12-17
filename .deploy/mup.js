@@ -1,14 +1,14 @@
 module.exports = {
   servers: {
     one: {
-      host: '111.222.333.444',
+      host: '104.236.11.85',
       username: 'root',
-      password: 'changeme'
+      password: 'NaMenehune1998AC'
     }
   },
 
   app: {
-    name: 'meteor-application-template-react',
+    name: 'Kokua-Hawaii',
     path: '../',
 
     servers: {
@@ -20,7 +20,7 @@ module.exports = {
     },
 
     env: {
-      ROOT_URL: 'http://111.222.333.444',
+      ROOT_URL: 'http://104.236.11.85',
       MONGO_URL: 'mongodb://mongodb/meteor',
       MONGO_OPLOG_URL: 'mongodb://mongodb/local',
     },
