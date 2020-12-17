@@ -37,7 +37,7 @@ body {
 
 .ui.header.financialHeader {
   margin: 10px;
-  padding-top: 50px;
+  padding-top: 75px;
 }
 
 .ui.container.additional {
@@ -97,6 +97,10 @@ body {
 }
 
 .ui.header.sign-out {
+  padding-top: 100px;
+}
+
+.ui.container.student {
   padding-top: 100px;
 }
 
