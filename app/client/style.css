@@ -58,6 +58,7 @@ body {
 
 .intro {
   padding-bottom: 20px;
+  font-size: large;
 }
 
 .faq {
@@ -72,3 +73,19 @@ body {
 .sign-in {
   padding-top: 500px;
 }
+
+.home {
+  padding-bottom: 30px;
+}
+
+.table {
+  font-size: large;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.ui.borderless.menu.fixed {
+  background-color: skyblue;
+}
+
+
