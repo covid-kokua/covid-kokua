@@ -1,4 +1,5 @@
 import { Social } from './socialservices.page';
+import { landingPage} from './landing.page';
 import { Financial } from './financialservices.page';
 import { Student } from './studentservices.page';
 import { FAQ } from './faq.page';
@@ -17,6 +18,10 @@ const addValues = {
   image: 'N/A',
   description: 'Crowd-Sourced COVID Information',
 };
+
+test('Test that the Landing Page shows up', async (testController) => {
+  await landingPage.isDisplayed(testController);
+});
 
 test('Test that Social Services page shows up', async (testController) => {
   await navBar.gotoSocial(testController);
