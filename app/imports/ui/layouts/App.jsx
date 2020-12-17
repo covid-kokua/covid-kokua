@@ -14,7 +14,6 @@ import FAQ from '../pages/FAQ';
 import FinancialServices from '../pages/FinancialServices';
 import EditFinancial from '../pages/EditFinancial';
 import AddFinResource from '../pages/AddFinResource';
-import FinancialServicesAdmin from '../pages/FinancialServicesAdmin';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -28,7 +27,6 @@ class App extends React.Component {
               <Route path="/additional" component={AdditionalServices}/>
               <Route path="/socialservices" component={SocialServices}/>
               <Route path="/financialservices" component={FinancialServices}/>
-              <AdminProtectedRoute path="/adminfinancial" component={FinancialServicesAdmin}/>
               <Route path="/editfinancial/:_id" component={EditFinancial}/>
               <Route path="/addfinancial" component={AddFinResource}/>
               <Route path="/studentresources" component={StudentResources}/>
