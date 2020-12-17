@@ -4,7 +4,7 @@ import { Button, Card, Container, Header, Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import ResourceAdmin from '../components/ResourceAdmin';
+
 import { Resources } from '../../api/resource/Resources';
 
 /** Renders a table containing all of the Financial Resource documents. Use <StuffItem> to render each row. */

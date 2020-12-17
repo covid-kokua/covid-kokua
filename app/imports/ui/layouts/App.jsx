@@ -15,9 +15,6 @@ import FinancialServices from '../pages/FinancialServices';
 import EditFinancial from '../pages/EditFinancial';
 import AddFinResource from '../pages/AddFinResource';
 import FinancialServicesAdmin from '../pages/FinancialServicesAdmin';
-import Signin from '../pages/Signin';
-import Signup from '../pages/Signup';
-import Signout from '../pages/Signout';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -28,9 +25,6 @@ class App extends React.Component {
             <NavBar/>
             <Switch>
               <Route exact path="/" component={Landing}/>
-              <Route path="/signin" component={Signin}/>
-              <Route path="/signup" component={Signup}/>
-              <ProtectedRoute path="/signout" component={Signout}/>
               <Route path="/additional" component={AdditionalServices}/>
               <Route path="/socialservices" component={SocialServices}/>
               <Route path="/financialservices" component={FinancialServices}/>
