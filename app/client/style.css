@@ -88,4 +88,15 @@ body {
   background-color: skyblue;
 }
 
+.ui.container.sign-in {
+  padding-top: 100px;
+}
+
+.ui.container.sign-up {
+  padding-top: 100px;
+}
+
+.ui.header.sign-out {
+  padding-top: 100px;
+}
 
