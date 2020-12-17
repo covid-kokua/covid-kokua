@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
-// import { withTracker } from 'meteor/react-meteor-data';
+import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Menu, Dropdown, Header } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
@@ -53,9 +53,9 @@ NavBar.propTypes = {
   currentUser: PropTypes.string,
 };
 
-// const NavBarContainer = withTracker(() => ({
-//   currentUser: Meteor.user() ? Meteor.user().username : '',
-// }))(NavBar);
+const NavBarContainer = withTracker(() => ({
+   currentUser: Meteor.user() ? Meteor.user().username : '',
+}))(NavBar);
 
 /** Enable ReactRouter for this component. https://reacttraining.com/react-router/web/api/withRouter */
-export default withRouter(NavBar);
+export default withRouter(NavBarContainer);

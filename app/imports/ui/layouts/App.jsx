@@ -46,6 +46,11 @@ class App extends React.Component {
     );
   }
 }
+/**
+ * ProtectedRoute (see React Router v4 sample)
+ * Checks for Meteor login before routing to the requested page, otherwise goes to signin page.
+ * @param {any} { component: Component, ...rest }
+ */
 const ProtectedRoute = ({ component: Component, ...rest }) => (
     <Route
         {...rest}
@@ -58,11 +63,6 @@ const ProtectedRoute = ({ component: Component, ...rest }) => (
         }}
     />
 );
-
-ProtectedRoute.propTypes = {
-  component: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
-  location: PropTypes.object,
-};
 
 /**
  * AdminProtectedRoute (see React Router v4 sample)
@@ -82,6 +82,12 @@ const AdminProtectedRoute = ({ component: Component, ...rest }) => (
         }}
     />
 );
+
+/** Require a component and location to be passed to each ProtectedRoute. */
+ProtectedRoute.propTypes = {
+  component: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
+  location: PropTypes.object,
+};
 
 /** Require a component and location to be passed to each AdminProtectedRoute. */
 AdminProtectedRoute.propTypes = {
