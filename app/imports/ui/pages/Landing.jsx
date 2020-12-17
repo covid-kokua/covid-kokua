@@ -5,8 +5,8 @@ import { Container, Grid, Header, Image } from 'semantic-ui-react';
 class Landing extends React.Component {
   render() {
     return (
-        <div className='landing'>
-          <Grid id='landing-page' verticalAlign='middle' textAlign='center' container>
+        <div id='landing-page' className='landing'>
+          <Grid verticalAlign='middle' textAlign='center' container>
             <Image className='landing' centered size='huge' src="/images/oahu.jpg"/>
             <Grid.Column width={8}>
               <h1 className='introHeader'>Welcome to #Kokua-Hawai&apos;i!</h1>

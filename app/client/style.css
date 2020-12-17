@@ -52,10 +52,6 @@ body {
   padding-top: 70px;
 }
 
-.ui.header.mission {
-  padding-top: 20px;
-}
-
 .intro {
   padding-bottom: 20px;
   font-size: large;
@@ -75,7 +71,7 @@ body {
 }
 
 .home {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .table {
